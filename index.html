@@ -17,6 +17,7 @@
 
 <head>
   <title>Happy Birthday to U</title>
+  <!-- change icon -->
   <link rel="icon" type="image/x-icon" href="https://www.himang.my.id/favicon.ico">
   <meta name="description" content="Happy Birthday Friend">
 </head>
@@ -54,7 +55,8 @@
     <p id="halo" class="halo"></p>
 
     <div>
-      <blockquote id='bq' data-text='𝘍𝘳𝘰𝘮 𝘏𝘪𝘮𝘢𝘯𝘨'>
+      <!-- Change Sender -->
+      <blockquote id='bq' data-text='From Sơn Anh'>
         <p id="kalimat">Sẵn Sàng chưa nè 🤣🎉</p>
 
         <p id="pesan1">Bấm vào 4 hộp quà ở dưới đi 😆🎉</p>
@@ -65,34 +67,37 @@
           <li id="lv4">🎂</li>
         </div>
 
-        <p id="pesan2">Tunggu...</p>
-        <!-- Pesan -->
-        <p id="pesan3">Ciee.. Ada yang Ultah Nih 🤣🎉</p>
-        <p id="pesan4">Happy Birthday, </p>
-        <p id="pesan5" class="gaya2">Nambah tua aja ya, hehe</p>
-        <p id="pesan6" class="gaya2">Semoga panjang umur biar tiap tahun bisa traktirin aku wkwk 😆🎉</p>
-        <p id="pesan7" class="gaya2">Sehat selalu ya!</p>
+        <p id="pesan2">Bắt đầu nè...</p>
+        <!-- message -->
+        <p id="pesan3">Woww.. Ở đây có một cái sinh nhật🎉</p>
+        <p id="pesan4">Happy Birthday to Uuuu, </p>
+        <p id="pesan5" class="gaya2">Vậy là già thêm một tuổi rồi, hehe</p>
+        <p id="pesan6" class="gaya2">Sống lâu nhớ, để năm nào mình cũng có thể chúc bạn như vậy  😆🎉</p>
+        <p id="pesan7" class="gaya2">À để mình còn được ăn nữa chớ!</p>
 
-        <p id="pesan8" class="gaya2">Canda wkwwk :v</p>
-        <p id="pesan9" class="gaya2">Oh iya, semoga di hari spesialmu ini kamu dapat menjadi pribadi yang lebih baik
-          yaa.. <br>Dilancarkan segala urusannya Diberikan kesehatan jasmani dan rohani🥳🎉</p>
-        <p id="pesan10" class="gaya2">Happy Level Up Day!! 🥳</p>
+        <p id="pesan8" class="gaya2">Mình đùa đó, bây giờ là thật nè </p>
+        <p id="pesan9" class="gaya2">Yap, Bước sang một tuổi mới rồi,
+          <br>Chúc bạn của tui thêm xinh đẹp hơn,🥳
+          <br>Gặt hái được nhiều thành công hơn nè,🎉
+          <br>Nghe nó có một chút nhạt nhỉ, nhưng mà thật sự nó được nói từ tấm lòng của mình đó ạ..🎉
+        </p>
+        <p id="pesan10" class="gaya2">Have a fabulous birthday! 🥳</p>
 
-        <!-- Tombol Lanjut -->
-        <p id="opsL">Klik untuk Lanjut</p>
+        <!-- Click Continue Button -->
+        <p id="opsL">Click để típ tục nè</p>
       </blockquote>
     </div>
 
-    <!-- Tombol Kirim Pesan -->
-    <div id="Tombol"><a id="By">&#128140; Lanjut</a></div>
+    <!-- Nút Gửi tin nhắn -->
+    <div id="Tombol"><a id="By">&#128140; Tiếp Tục</a></div>
 
     <!-- Pesan Tambahan -->
-    <p id="katatambahan" class="sembunyi">Gajadi deh soalnya kamu bau wleee 😜</p>
+    <p id="katatambahan" class="sembunyi">Cảm ơn đã cho mình cơ hội chúc lại... 😜</p>
 
     <!-- Pesan Ditolak -->
     <div id="pesanditolak">
       <img id="stikerditolak" src="./gbr/weee.gif" />
-      <p id="kataditolak">Yaudah kalo gamau mh 😜</p>
+      <p id="kataditolak">Chà, không thì cũng phải đọc 😜</p>
     </div>
 
   </div>
@@ -154,7 +159,7 @@
       // Điều kiện tên
       if (name == 'Nga') {
         window.name = name;
-        vketikhalo = "Hai, " + name + " ✨";
+        vketikhalo = "Hi, " + name + " ✨";
         mulainama();
       } else {
         await swals.fire('Saii!', 'Còn muốn thử tui nữa hả, <br> Nhập đúng tên đi!');
@@ -163,15 +168,15 @@
     }
 
     //Variable Pertanyaan Akhir
-    var tanya = 'có muốn nhận quà hemm 😶🎁';
+    var tanya = 'à nãy là đùa á, bây giờ mới là thật nè, đọc nhó 😶🎁';
     var opstanya = 'Trả lời đi nè 😆';
-    var tompositif = 'Nhận';
+    var tompositif = 'Đọc';
     var tomnegatif = 'Không';
 
     async function menuju() {
       pesanwhatsapp = "Makasii udah ngucapin " + name + " ultah ><";
-      await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya!', 'success');
-      window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;
+      await swals.fire('OK!', 'Nhắn tin cho mình nhá, ya!', 'success');
+      window.location = "https://www.messenger.com/t/100007514884278" + pesanwhatsapp;
     }
   </script>
   <script src="./script.js"></script>
