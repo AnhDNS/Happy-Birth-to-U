@@ -29,7 +29,7 @@
 
   <!-- Wallpaper -->
   <div id="bodyblur">
-    <img src="./gbr/QN.jpg" id="wallpaper" />
+    <img src="./gbr/IMG_0196.JPG" id="wallpaper" />
     <div id="beneranblur"></div>
   </div>
 
@@ -92,12 +92,12 @@
     <div id="Tombol"><a id="By">&#128140; Tiếp Tục</a></div>
 
     <!-- Pesan Tambahan -->
-    <p id="katatambahan" class="sembunyi">Cảm ơn đã cho mình cơ hội chúc lại... 😜</p>
+    <p id="katatambahan" class="sembunyi">Cảm ơn đã cho mình cơ hội chúc lại...😜</p>
 
     <!-- Pesan Ditolak -->
     <div id="pesanditolak">
       <img id="stikerditolak" src="./gbr/weee.gif" />
-      <p id="kataditolak">Chà, không thì cũng phải đọc 😜</p>
+      <p id="kataditolak">Chà, không thì cũng phải đọc😜</p>
     </div>
 
   </div>
@@ -151,18 +151,20 @@
 
     async function inipesan() {
       var {
-        value: name
+        value: password
       } = await swals.fire({
-        title: 'Nhập mật khẩu đi <br> Gợi ý: Bạn tên gì?',
-        input: 'text',
+        title: 'Nhập mật khẩu đi!!',
+        input: 'password',
       });
-      // Điều kiện tên
-      if (name == 'Nga') {
+      // Điều kiện mật khẩu
+      if (password == 123) {
+        // change name
+        var name = "Giấu Tên"
         window.name = name;
         vketikhalo = "Hi, " + name + " ✨";
         mulainama();
       } else {
-        await swals.fire('Saii!', 'Còn muốn thử tui nữa hả, <br> Nhập đúng tên đi!');
+        await swals.fire('Saii rồi! ', 'Nhập lại đi, <br> Hint: Vào một ngày đó!');
         inipesan();
       }
     }
@@ -174,13 +176,12 @@
     var tomnegatif = 'Không';
 
     async function menuju() {
-      pesanwhatsapp = "Makasii udah ngucapin " + name + " ultah ><";
+      // pesanmess = "Cảm ơn bạn đã nói " + name + " ultah ><";
       await swals.fire('OK!', 'Nhắn tin cho mình nhá, ya!', 'success');
-      window.location = "https://www.messenger.com/t/100007514884278" + pesanwhatsapp;
+      window.location = "m.me/DnSonAnh/";
     }
   </script>
   <script src="./script.js"></script>
-  <!-- Sampai Sini -->
 </body>
 
 </html>
