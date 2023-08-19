@@ -32,6 +32,7 @@ function initengahan(){
   function tombol(){wallpaper.style="transform: scale(1);";Tombol.style="opacity:1;transform: scale(1);";if(fungsi==2){By.innerHTML="&#128140; Nhắn tin cho mình nhé"}}
   document.getElementById("By").onclick = function() {if(fungsi==1){Tombol.style="";fthilang();fungsi=0;pertanyaan();} if(fungsi==2){Tombol.style="";menuju();}}
  
+
   // Giờ
   // const waktuSekarang = new Date().getHours();let ucapan;
   // if(waktuSekarang < 10){ucapan = "Selamat Pagi, ";} 
@@ -39,6 +40,7 @@ function initengahan(){
   // else if(waktuSekarang < 19){ucapan = "Selamat Sore, ";}
   // else{ucapan = "Selamat Malam, ";}
 
+  
   vketik1=kalimat.innerHTML;kalimat.innerHTML = "";
   function mulaiketik1(){
   new TypeIt("#kalimat", {

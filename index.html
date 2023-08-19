@@ -16,7 +16,7 @@
 <script src="https://kit.fontawesome.com/4f3ce16e3e.js" crossorigin="anonymous"></script>
 
 <head>
-  <title>Happy Birthday to U</title>
+  <title>Happy Birthday</title>
   <!-- change icon -->
   <link rel="icon" type="image/x-icon" href="https://www.himang.my.id/favicon.ico">
   <meta name="description" content="Happy Birthday Friend">
@@ -29,7 +29,7 @@
 
   <!-- Wallpaper -->
   <div id="bodyblur">
-    <img src="./gbr/IMG_0196.JPG" id="wallpaper" />
+    <img src="./gbr/QN.jpg" id="wallpaper" />
     <div id="beneranblur"></div>
   </div>
 
@@ -38,7 +38,7 @@
     <div id="kadoIn">
       <img src="./gbr/kado.png" />
     </div>
-    <p id="ket">Nhấp vào hộp quà đi nè!!!</p>
+    <p id="ket">Please Touch Box Gift!!!</p>
 
     <div class="kumpulanstiker">
       <!-- Stiker untuk Konten -->
@@ -57,9 +57,9 @@
     <div>
       <!-- Change Sender -->
       <blockquote id='bq' data-text='From Sơn Anh'>
-        <p id="kalimat">Sẵn Sàng chưa nè 🤣🎉</p>
+        <p id="kalimat">Cảnh báo có thể sẽ bị tiểu đường...🤣</p>
 
-        <p id="pesan1">Bấm vào 4 hộp quà ở dưới đi 😆🎉</p>
+        <p id="pesan1">Nga bấm vào 4 hộp quà ở dưới đi</p>
         <div id="kolombaru">
           <li id="lv1">🎂</li>
           <li id="lv2">🎂</li>
@@ -71,15 +71,18 @@
         <!-- message -->
         <p id="pesan3">Woww.. Ở đây có một cái sinh nhật🎉</p>
         <p id="pesan4">Happy Birthday to Uuuu, </p>
-        <p id="pesan5" class="gaya2">Vậy là già thêm một tuổi rồi, hehe</p>
-        <p id="pesan6" class="gaya2">Sống lâu nhớ, để năm nào mình cũng có thể chúc bạn như vậy  😆🎉</p>
-        <p id="pesan7" class="gaya2">À để mình còn được ăn nữa chớ!</p>
+        <p id="pesan5" class="gaya2">Vậy là già thêm một tuổi nữa rồi</p>
+        <p id="pesan6" class="gaya2">Chúc Nga sống lâu nhớ, để năm nào mình cũng có thể chúc bạn như vậy😆🎉</p>
+        <p id="pesan7" class="gaya2">Và để mình còn được ăn nữa chớ!</p>
 
-        <p id="pesan8" class="gaya2">Mình đùa đó, bây giờ là thật nè </p>
+        <p id="pesan8" class="gaya2">Mình đùa đó, bây giờ là chúc thật nè </p>
         <p id="pesan9" class="gaya2">Yap, Bước sang một tuổi mới rồi,
-          <br>Chúc bạn của tui thêm xinh đẹp hơn,🥳
-          <br>Gặt hái được nhiều thành công hơn nè,🎉
-          <br>Nghe nó có một chút nhạt nhỉ, nhưng mà thật sự nó được nói từ tấm lòng của mình đó ạ..🎉
+          <br>Chúc bạn thêm xinh đẹp hơn,🥳
+          <br>Gặt hái được nhiều thành công hơn,🎉
+          <br>Tạo ra cho riêng mình một cuộc đời tốt lên!😍
+          <br>Nghe nó có một chút nhạt đúng không?
+          <br>Nhưng mà thật sự nó được nói từ tấm lòng của mình đó..🎉
+          <br>Một lần nữa...
         </p>
         <p id="pesan10" class="gaya2">Have a fabulous birthday! 🥳</p>
 
@@ -153,18 +156,18 @@
       var {
         value: password
       } = await swals.fire({
-        title: 'Nhập mật khẩu đi!!',
+        title: 'Input Passsword !!',
         input: 'password',
       });
       // Điều kiện mật khẩu
-      if (password == 123) {
+      if (password == "20/08/2000") {
         // change name
-        var name = "Giấu Tên"
+        var name = "Quỳnh Nga"
         window.name = name;
         vketikhalo = "Hi, " + name + " ✨";
         mulainama();
       } else {
-        await swals.fire('Saii rồi! ', 'Nhập lại đi, <br> Hint: Vào một ngày đó!');
+        await swals.fire('Mật khẩu sai! ', 'Vui lòng nhập lại mật khẩu, <br> Hint: Your birthday!!! ');
         inipesan();
       }
     }
